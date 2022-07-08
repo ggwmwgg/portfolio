@@ -1,0 +1,124 @@
+{% extends "layout.html" %}
+
+{% block title %}Portfolio{% endblock %}
+
+{% block nav %}
+<ul id="navigation">
+    <li><a href="/">Home</a></li>
+    <li><a href="/about">About</a></li>
+    <li class="active"><a href="/port">Portfolio</a></li>
+    <li><a href="/contact">Contact</a></li>
+    <li><a href="/ru">Russian</a></li>
+</ul>
+{% endblock %}
+
+{% block main %}
+<!--? Hero Area Start-->
+<div class="hero-area2 d-flex align-items-center">
+    <div class="container">
+        <div class="row ">
+            <div class="col-xl-12">
+                <!-- Hero Caption -->
+                <div class="hero-cap pt-100">
+                    <h2>My Protfolio</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Hero Area End-->
+<!--? About 1 Start-->
+<section class="about-area section-padding40 our-services">
+    <div class="container">
+        <div class="rwo">
+            <div class="col-xl-12">
+                <div class="section-tittle mb-75 text-center">
+                    <h2>My Expertise</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex justify-contnet-center">
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="single-services single-services2 mb-30">
+                    <div class="services-cap">
+                        <h5>Backend<br> development</h5>
+                        <h4>Have several projects with registration, ticker search, and SQL executions.</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="single-services single-services2 mb-30">
+                    <div class="services-cap">
+                        <h5>Telegram<br> Bots</h5>
+                        <h4>Developed few bots with market and exchange functionality.</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="single-services single-services2 mb-30">
+                    <div class="services-cap">
+                        <h5>Database<br> Implementation</h5>
+                        <h4>Have experience in executing queries, creating and maintaining databases.</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- About  End-->
+<!--? Gallery Area Start -->
+<div class="gallery-area section-padding40">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-tittle mb-60">
+                    <h2>Selected Portfolios</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-between">
+            <div class="offset-xl-1 col-xl-5 col-lg-6 col-md-6 col-sm-6">
+                <div class="box snake mb-30">
+                    <div class="gallery-img small-img " style="background-image: url(static/img/1.png);"></div>
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <a href="static/img/1.png" class="img-pop-up"><i class="ti-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-5 ol-lg-6 col-lg-6 col-md-6 col-sm-6">
+                <div class="box snake mb-30">
+                    <div class="gallery-img small-img " style="background-image: url(static/img/2.png);"></div>
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <a href="static/img/2.png" class="img-pop-up"><i class="ti-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="offset-xl-1 col-xl-5 col-lg-6 col-md-6 col-sm-6">
+                <div class="box snake mb-30">
+                    <div class="gallery-img small-img " style="background-image: url(static/img/3.png);"></div>
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <a href="static/img/3.png" class="img-pop-up"><i class="ti-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-5 col-lg-6 col-md-6 col-sm-6">
+                <div class="box snake mb-30">
+                    <div class="gallery-img small-img " style="background-image: url(static/img/4.png);"></div>
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <a href="static/img/4.png" class="img-pop-up"><i class="ti-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Gallery Area End -->
+{% endblock %}

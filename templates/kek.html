@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block title %}About{% endblock %}
+
+{% block nav %}
+<ul id="navigation">
+    <li><a href="/">Home</a></li>
+    <li class="active"><a href="/about">About</a></li>
+    <li><a href="/port">Portfolio</a></li>
+    <li><a href="/contact">Contact</a></li>
+    <li><a href="/ru">Russian</a></li>
+</ul>
+{% endblock %}
+
+{% block main %}
+<div class="whole-wrap">
+    <div class="container box_1170">
+        <div class="section-top-border">
+            <h3 class="mb-30">Table</h3>
+            <div class="progress-table-wrap">
+                <div class="progress-table">
+                    <div class="table-head">
+                        <div class="serial">#</div>
+                        <div class="country">Name</div>
+                        <div class="visit">Subject</div>
+                        <div class="percentage">Date</div>
+                        <div class="percentage">Msg</div>
+                    </div>
+                    {% for msg in messages %}
+                    <div class="table-row">
+                        <div class="serial">{{msg.id}}</div>
+                        <div class="country">{{msg.name}}</div>
+                        <div class="visit">{{msg.subject}}</div>
+                        <div class="percentage">{{msg.date}}</div>
+                        <div class="percentage">{{msg.message}}</div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

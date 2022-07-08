@@ -1,0 +1,167 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>{% block title %}{% endblock %}</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" type="image/x-icon" href="../static/favicon.ico">
+
+	<!-- CSS here -->
+	<link rel="stylesheet" href="../static/bootstrap.min.css">
+	<link rel="stylesheet" href="../static/owl.carousel.min.css">
+	<link rel="stylesheet" href="../static/slicknav.css">
+    <link rel="stylesheet" href="../static/flaticon.css">
+    <link rel="stylesheet" href="../static/progressbar_barfiller.css">
+    <link rel="stylesheet" href="../static/gijgo.css">
+    <link rel="stylesheet" href="../static/animate.min.css">
+    <link rel="stylesheet" href="../static/animated-headline.css">
+	<link rel="stylesheet" href="../static/magnific-popup.css">
+	<link rel="stylesheet" href="../static/fontawesome-all.min.css">
+	<link rel="stylesheet" href="../static/themify-icons.css">
+	<link rel="stylesheet" href="../static/slick.css">
+	<link rel="stylesheet" href="../static/nice-select.css">
+    <link rel="stylesheet" href="../static/style.css">
+
+</head>
+<body>
+    <!-- ? Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="../static/img/l.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader Start -->
+    <header>
+        <div class="header-area header-transparent">
+            <div class="main-header header-sticky">
+                <div class="container-fluid">
+                    <div class="menu-wrapper d-flex align-items-center justify-content-between">
+                        <!-- Logo -->
+                        <div class="logo">
+                            <a href="/ru"><img src="../static/logo.png" alt=""></a>
+                        </div>
+                        <!-- Main-menu -->
+                        <div class="main-menu f-right d-none d-lg-block">
+                            <nav>
+                                {% block nav %}{% endblock %}
+                            </nav>
+                        </div>
+                        <!-- Header-btn -->
+                        <div class="header-info-right d-none d-lg-block">
+                            <a href="https://www.linkedin.com/in/ggwm/" class="btn header-btn" target="_blank">Поговорим? :) <i class="ti-arrow-right"></i></a>
+                        </div>
+                        <!-- Mobile Menu -->
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+    </header>
+    <main>
+        {% block main %}{% endblock %}
+    </main>
+    <footer>
+        <div class="footer-wrappr">
+            <div class="footer-top">
+                <!-- Want To work -->
+                <section class="wantToWork-area ">
+                    <div class="container">
+                        <div class="wants-wrapper w-padding2">
+                            <div class="row align-items-center justify-content-between">
+                                <div class="col-xl-7 col-lg-9 col-md-8">
+                                    <div class="wantToWork-caption wantToWork-caption2">
+                                        <h2>Нужно больше информации?</h2>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-3 col-md-4">
+                                    <a href="#" class="btn white-btn f-right sm-left">Скачайте CV</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Want To work End -->
+            </div>
+            <!-- footer-bottom area -->
+            <div class="footer-bottom-area">
+                <div class="container">
+                    <div class="footer-border">
+                        <div class="row align-items-center">
+                            <div class="col-xl-4 col-lg-4">
+                                <div class="footer-social">
+                                    <a href="https://t.me/ggwmm"><i class="fab fa-telegram" target="_blank"></i></a>
+									<a href="https://www.instagram.com/ggwmwgg/" target="_blank"><i class="fab fa-instagram"></i></a>
+                                    <a href="mailto:mihail999999999@gmail.com"><i class="fas fa-envelope" ></i></a>
+                                    <a href="#"><i class="fab fa-github" target="_blank"></i></a>
+                                    <a href="https://www.linkedin.com/in/ggwm/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-xl-8 col-lg-8">
+                                <div class="footer-copy-right f-right">
+                                    <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Scroll Up -->
+    <div id="back-top" >
+        <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
+    </div>
+    <!-- JS here -->
+
+    <script src="../static/js/modernizr-3.5.0.min.js"></script>
+    <!-- Jquery, Popper, Bootstrap -->
+    <script src="../static/js/jquery-1.12.4.min.js"></script>
+    <script src="../static/js/popper.min.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+    <!-- Jquery Mobile Menu -->
+    <script src="../static/js/jquery.slicknav.min.js"></script>
+
+    <!-- Jquery Slick , Owl-Carousel Plugins -->
+    <script src="../static/js/owl.carousel.min.js"></script>
+    <script src="../static/js/slick.min.js"></script>
+    <!-- One Page, Animated-HeadLin -->
+    <script src="../static/js/wow.min.js"></script>
+    <script src="../static/js/animated.headline.js"></script>
+    <script src="../static/js/jquery.magnific-popup.js"></script>
+
+    <!-- Date Picker -->
+    <script src="../static/js/gijgo.min.js"></script>
+    <!-- Nice-select, sticky -->
+    <script src="../static/js/jquery.nice-select.min.js"></script>
+    <script src="../static/js/jquery.sticky.js"></script>
+    <!-- Progress -->
+    <script src="../static/js/jquery.barfiller.js"></script>
+
+    <!-- counter , waypoint,Hover Direction -->
+    <script src="../static/js/jquery.counterup.min.js"></script>
+    <script src="../static/js/waypoints.min.js"></script>
+    <script src="../static/js/jquery.countdown.min.js"></script>
+    <script src="../static/js/hover-direction-snake.min.js"></script>
+	<script src="../static/js/jquery.ajaxchimp.min.js"></script>
+
+    <!-- Jquery Plugins, main Jquery -->
+    <script src="../static/js/plugins.js"></script>
+    <script src="../static/js/main.js"></script>
+
+
+
+    </body>
+</html>
